@@ -10,7 +10,7 @@ object ernesto{
     var bonoPresentismo = bonoNulo
     var cantidadDeFaltas = 0
     var compañero = sofia
-    var categoria = gerente
+    
 
     method cantidadDeFaltas() { 
 		return cantidadDeFaltas 
