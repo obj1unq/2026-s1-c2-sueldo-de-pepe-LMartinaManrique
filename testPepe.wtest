@@ -1,7 +1,9 @@
 import pepe.*
 import bonos.*
 import categorias.*
-
+import ernesto.*
+import sofia.*
+import roque.*
 describe "sueldo pepe" {
 	test "Test inicial 1" {
 		/* esta parte está comentada porque falta agregar los métodos
@@ -28,5 +30,16 @@ describe "sueldo pepe" {
 		assert.equals(15000 + 1500 + 0, pepe.sueldo())
 	}
 
-	
+	test "test inicial 3" {
+	pepe.setCategoria(medioTiempo)
+	pepe.setBonoResultado(bonoPorcentaje)
+	pepe.setBonoPresentismo(bonoPresentismoDemagogico)
+	pepe.setCantidadDeFaltas(1)
+	roque.setBonoResultado(bonoMontoFijo)
+	ernesto.setCompañero(pepe)
+	ernesto.setBonoPresentismo(bonoPresentismoAjuste)
+	assert.equals(pepe.sueldo(),11500)
+	assert.equals(roque.sueldo(), 37800)
+	assert.equals(ernesto.sueldo(), 10100)
+	}
 }
